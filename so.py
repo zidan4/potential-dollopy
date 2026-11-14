@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 df = pd.read_csv("drive/My Drive/ML_Process_Data_Files/Section_12_Model_Evaluation/housing_data.csv")
 
 df.head()
@@ -26,10 +27,6 @@ X = df[features]
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
 
-"""## Model
-
-To keep things simple, we'll use linear regression:
-"""
 
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import LinearRegression
